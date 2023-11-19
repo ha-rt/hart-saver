@@ -27,7 +27,7 @@ def continueMenu(links, site, file):
                 nlks = returnLinks(link)
                 saveLinks(nlks, file)
                 new_links.extend(nlks)
-        returnLinks(new_links, site, file)
+        continueMenu(new_links, site, file)
 
     if cont == "n":
         refineFile()
